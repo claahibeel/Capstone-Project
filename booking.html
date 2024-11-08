@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking System</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Block -->
+    <header>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="search_tutor.html">Tutor Search</a></li>
+            <li><a href="booking.html">Booking System</a></li>
+            <li><a href="video_conference.html">Video Conferencing</a></li>
+            <li><a href="view_bookings.html">View Bookings</a></li>
+            <li><a href="feedback.html">Feedback & Rating</a></li>
+            <li><a href="tutor_schedule.html">Tutor Schedule</a></li>
+            <li><a href="student_view.html">Student View</a></li>
+        </ul>
+      </nav>
+      <h1>ToiTalk - Where Language Meets Connection</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Book a Lesson</h2>
+            <form>
+                <label for="tutor">Select Tutor:</label>
+                <select id="tutor" name="tutor">
+                    <option value="tutor1">Tutor 1</option>
+                    <!-- Add more tutors -->
+                </select>
+                
+                <label for="date">Choose Date:</label>
+                <input type="date" id="date" name="date">
+
+                <label for="time">Choose Time:</label>
+                <input type="time" id="time" name="time">
+                
+                <button type="submit">Book Lesson</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ToiTalk. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

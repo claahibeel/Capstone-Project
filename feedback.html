@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback and Rating</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Block -->
+    <header>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="search_tutor.html">Tutor Search</a></li>
+            <li><a href="booking.html">Booking System</a></li>
+            <li><a href="video_conference.html">Video Conferencing</a></li>
+            <li><a href="view_bookings.html">View Bookings</a></li>
+            <li><a href="feedback.html">Feedback & Rating</a></li>
+            <li><a href="tutor_schedule.html">Tutor Schedule</a></li>
+            <li><a href="student_view.html">Student View</a></li>
+        </ul>
+      </nav>
+      <h1>ToiTalk - Where Language Meets Connection</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Leave Feedback</h2>
+            <form>
+                <label for="rating">Rate your Tutor:</label>
+                <select id="rating" name="rating">
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Good</option>
+                    <option value="3">3 - Average</option>
+                    <option value="2">2 - Poor</option>
+                    <option value="1">1 - Very Poor</option>
+                </select>
+                
+                <label for="feedback">Leave a comment:</label>
+                <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ToiTalk. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

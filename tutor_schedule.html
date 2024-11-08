@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Schedule Management</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <!-- Header Block -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search_tutor.html">Tutor Search</a></li>
+                <li><a href="booking.html">Booking System</a></li>
+                <li><a href="video_conference.html">Video Conferencing</a></li>
+                <li><a href="view_bookings.html">View Bookings</a></li>
+                <li><a href="feedback.html">Feedback & Rating</a></li>
+                <li><a href="tutor_schedule.html">Tutor Schedule</a></li>
+                <li><a href="student_view.html">Student View</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Edit Your Weekly Schedule</h1>
+            <p>Click on a slot to toggle availability.</p>
+            <div class="schedule">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9:00 AM</td>
+                            <td class="open" onclick="toggleAvailability(this)">Open</td>
+                            <td class="booked" onclick="toggleAvailability(this)">Booked</td>
+                            <td class="unavailable" onclick="toggleAvailability(this)">Unavailable</td>
+                            <td class="open" onclick="toggleAvailability(this)">Open</td>
+                            <td class="unavailable" onclick="toggleAvailability(this)">Unavailable</td>
+                            <td class="booked" onclick="toggleAvailability(this)">Booked</td>
+                            <td class="unavailable" onclick="toggleAvailability(this)">Unavailable</td>
+                        </tr>
+                        <!-- Repeat rows for each hour slot -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ToiTalk. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
